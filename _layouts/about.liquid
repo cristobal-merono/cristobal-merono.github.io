@@ -32,6 +32,12 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
+
+        <!-- Add University Logo Here -->
+        <div class="university-logo" style="text-align: center; margin-top: 15px;">
+          <img src="{{ 'assets/img/university-logo.png' | relative_url }}" alt="University Logo" style="width: 250px; height: auto;">
+        </div>
+
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
@@ -59,7 +65,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Latest publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

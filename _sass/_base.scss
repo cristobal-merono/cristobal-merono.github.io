@@ -198,7 +198,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
     p {
       display: inline-block;
@@ -246,9 +246,10 @@ ul.task-list input[type="checkbox"] {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: #94bfdb;
   opacity: 0.95;
 }
+
 
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -668,7 +669,7 @@ footer.sticky-bottom {
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 
     span {
       font-size: 1.5rem;
@@ -678,8 +679,8 @@ footer.sticky-bottom {
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding-top: 0;
+    margin-top: 0;
     text-align: right;
   }
 
@@ -694,12 +695,33 @@ footer.sticky-bottom {
       .preview {
       }
 
+   /* Clara: Hide the abbr element completely */
+      abbr.badge {
+       display: none !important;
+      }
+
+   /* Clara: Optional: If the blue box is coming from something else, also try hiding the parent container */
+      .col-sm-2.abbr {
+        display: none !important;
+      }
+
+   /* Clara: Gives space between the blue underlined links */
+
+      .periodical a {
+        margin-left: 5px; /* Adjust the spacing between the journal/year and the links */
+        color: blue;
+        text-decoration: underline;
+      }
+
       .abbr {
         margin-bottom: 0.5rem;
 
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
+          #padding: 0.001rem; /* Adjust padding to increase/decrease box size */
+          #height: 0.5rem; /* Set or adjust height */
+          #width: 100px !important; /* Force the width, overriding w-100 */
           margin-bottom: 0.5rem;
 
           a {

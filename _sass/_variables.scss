@@ -1,4 +1,4 @@
-/*******************************************************************************
+       /*******************************************************************************
  * Variables used throughout the theme.
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
@@ -21,6 +21,7 @@ $light-purple-color: lighten($purple-color, 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
+$bluecla-color: rgba(245,247,250,5) !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%);

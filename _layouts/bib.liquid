@@ -177,6 +177,18 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" style="color: blue; text-decoration: underline;" role="link">doi</a>
+      {% endif %}
+      {% if entry.arxiv %}
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" style="color: blue; text-decoration: underline;" role="link">arXiv</a>
+      {% endif %}
+      {% if entry.abstract %}
+        <a class="abstract" href="#" style="color: blue; text-decoration: underline;" role="button" onclick="toggleDropdown(this, 'abstract')">abs</a>
+      {% endif %}
+      {% if entry.bibtex_show %}
+        <a class="bibtex" href="#" style="color: blue; text-decoration: underline;" role="button" onclick="toggleDropdown(this, 'bibtex')">bib</a>
+      {% endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
@@ -188,15 +200,6 @@
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
-      {% endif %}
-      {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-      {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
