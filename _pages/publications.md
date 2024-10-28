@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: "search by categories: <b>Calderón problem</b>, <b>scattering</b>, <b>Born approximation</b>, <b>harmonic analysis</b>" 
+description: "search by categories: <b>Calderón problem</b>, <b>Inverse Scattering</b>, <b>Born approximation</b>" 
 nav: true
 nav_order: 2
 ---
