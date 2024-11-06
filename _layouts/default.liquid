@@ -64,7 +64,7 @@
     {% include scripts/typograms.liquid %}
     {% include scripts/misc.liquid %}
     {% include scripts/badges.liquid %}
-    {% include scripts/mathjax.liquid %}
+    {% include scripts/mathjax.liquid %} <!-- Keep the include, but modify it as shown above -->
     {% include scripts/pseudocode.liquid %}
     {% include scripts/analytics.liquid %}
     {% include scripts/progressBar.liquid %}
@@ -73,5 +73,21 @@
     {% include scripts/jekyll_tabs.liquid %}
     {% include scripts/back_to_top.liquid %}
     {% include scripts/search.liquid %}
+
+    <!-- Clara: MathJax Configuration (optional) -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+
+    <!-- Clara: MathJax Script -->
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+    </script>
+
   </body>
 </html>

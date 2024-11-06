@@ -2,23 +2,29 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://portalcientifico.upm.es/es/ipublic/researcher/271791'>Universidad Politécnica de Madrid</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p> ETSI Navales, Campus Ciudad Universitaria, Madrid</p>
+    <p> ETSI Navales, Campus Ciudad Universitaria, Madrid.</p>
     <p> <strong>email:</strong> cj.merono at upm.es </p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items (true/false)
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Associate Professor (Profesor Contratado Doctor) at Universidad Politécnica de Madrid. I belong to the [M^2ASAI](https://dcain.etsin.upm.es/m2asai/) research group at UPM. I am also a member of the research team of the project [AGAPI](https://dcain.etsin.upm.es/agapi/index.html).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<strong> Research: </strong>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My main research interests lie in Inverse Problems for Partial Differential Equations, specially in Inverse Scattering and the Calderón Problem. 
+
+<strong> Calderón Problem: </strong>
+
+The Calderón Problem is the mathematical model of [Electrical Impedance Tomography](https://en.wikipedia.org/wiki/Electrical_impedance_tomography) or EIT. This problem consists in the reconstruction of the conductivity inside a conductor from measurements of voltages and electrical currents made at the boundary of the conductor.  I am currently interested in the development of effective reconstruction algorithms using techniques from scattering theory like the Born approximation. One of the main challenges is to rigorously define this mathematical object in the case of ill- posed problems like the Calderón problem. For recent results in the radial case see this [preprint](https://arxiv.org/abs/2402.06321).
+
+
