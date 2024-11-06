@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://cristobal.merono.github.io/sitemap.xml
