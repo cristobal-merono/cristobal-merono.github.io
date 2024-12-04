@@ -284,6 +284,19 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+//Clara: add images in scale
+
+  .navbar-images {
+    display: flex;
+    margin-right: 0.5rem; /* Space between images and title */
+  }
+
+  .navbar-image {
+    width: 50px; /* Set width of each image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0.25rem; /* Space between images */
+  }
+
   .navbar-brand {
     color: var(--global-text-color);
   }
